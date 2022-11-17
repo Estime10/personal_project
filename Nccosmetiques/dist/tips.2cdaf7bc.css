@@ -1,0 +1,134 @@
+@import "https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Noto+Serif+Oriya:wght@500&family=Permanent+Marker&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Noto Serif Oriya, serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 6%;
+  font-weight: 600;
+  display: flex;
+}
+
+nav img {
+  width: 130px;
+}
+
+.nav-links {
+  text-align: right;
+  flex: 1;
+}
+
+.nav-links ul li {
+  padding: 8px 12px;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #000;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.nav-links ul li:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: pink;
+  margin: auto;
+  transition: all .8s;
+  display: block;
+}
+
+.nav-links ul li:hover:after {
+  width: 100%;
+}
+
+.text-box {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin: 5%;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.text-box img {
+  width: 330px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.text {
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.article {
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 25px;
+}
+
+.bio {
+  width: 550px;
+}
+
+.quote {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 2%;
+  font-size: 15px;
+  display: flex;
+}
+
+.videos {
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -8%;
+  display: flex;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+.vidOne, .vidTwo {
+  width: 360px;
+  height: 470px;
+}
+
+.vidThree {
+  width: 492px;
+  height: 280px;
+  margin-top: 20%;
+  margin-left: 15%;
+}
+
+/*# sourceMappingURL=tips.2cdaf7bc.css.map */
