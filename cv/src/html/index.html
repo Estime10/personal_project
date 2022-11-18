@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script type="module" src="/src/javascript/index.js"></script> -->
     <link rel="stylesheet" href="/src/css/index.css">
     <script src="https://kit.fontawesome.com/0dc048a67f.js" crossorigin="anonymous"></script>
+     
     <title>portfolio</title>
 </head>
 <body>
@@ -17,9 +17,9 @@
                     <source src="/src/assets/E.mp4">
                 </video>
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#skill">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closenmenu()"></i>
@@ -74,11 +74,11 @@
                     </p>
 <!-- add an eventlistener on the subtitles to make them change when you click on them -->
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
 
-                    <div class="tab-contents active-tab" id="skill">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Javascript</span><br>Frontend Developement</li>
                             <li><span>Node.js</span><br>Backend Developement</li>
@@ -102,7 +102,7 @@
     </div>
     <br>
     <!-- services -->
-    <div id="skills">
+    <div id="skill">
         <div class="container">
             <h1 class="sub-title">
                 My Skills
@@ -112,39 +112,43 @@
                     <i class="fa-brands fa-square-js"></i>
                     <h2>Javascript</h2>
                     <p>Is a scripting language used to create and control dynamic website content,
-                         i.e. anything that moves, refreshes, or otherwise 
-                        <!-- changes on your screen.
+                         i.e. anything that moves, refreshes, or otherwise <br>
+                        <!-- changes on your screen. -->
+
+                            
                          without requiring you to manually reload a web page.<br>
                          The Document Object Model (DOM) is a programming interface for web documents. 
                             It represents the page so that programs can change the document structure, style, 
                             and content. The DOM represents the document as nodes and objects; that way, 
-                            programming languages can interact with the page. -->
+                            programming languages can interact with the page. 
+                            
                     </p>
-                    <a href="#">learn more</a>
+                    
                 </div>
+
                 <div>
                     <i class="fa-brands fa-node"></i>
                     <h2>Node.js</h2>
                     <p>Is an open source development platform for executing JavaScript
                          code server-side. Node is useful for developing applications that 
 
-                         <!-- require a 
+                         require a 
                          persistent connection from the browser to the server and is often used for 
                          real-time applications such as chat, news feeds and web push notifications.
-                         -->
+                        
                     </p>
-                    <a href="#">learn more</a>
+                    
                 </div>
                 <div>
                     <i class="fa-brands fa-css3-alt"></i>
                     <h2>CSS</h2>
                     <p>Is a stylesheet language used to describe the presentation of
                         a document written in HTML or XML (including XML dialects 
-                        <!-- such
+                        such
                         as SVG, MathML or XHTML). CSS describes how elements should be
-                        rendered on screen, on paper, in speech, or on other media. -->
+                        rendered on screen, on paper, in speech, or on other media.
                     </p>
-                    <a href="#">learn more</a>
+                    
                 </div>
             </div>
         </div>
@@ -162,7 +166,7 @@
                 <div class="layer">
                     <h3>Jiko Wood</h3>
                     <p>Creation of a website for a carpenter</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
                 </div>
             </div>
 
@@ -171,7 +175,7 @@
                 <div class="layer">
                 <h3>NC Cosmétique</h3>
                     <p>Creation of a webshop for a Cosmetic brand</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
                 </div>
             </div>
             <div class="work">
@@ -181,7 +185,7 @@
                     <p>A webpage to know what time 
                         Worldwide
                     </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
                 </div>
             </div>
         </div>
@@ -194,34 +198,20 @@
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fa-solid fa-paper-plane"></i>Estimevangu.pro@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>+32484/ 03 02 68</p>
-                <div class="social-icons">
-                    <a href="https://github.com/Estime10"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://www.linkedin.com/in/estime-vangu-a9a08823a/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://discord.com/channels/@Estime#4008"><i class="fa-brands fa-discord"></i></a>
-                </div>
+                <p><i class="fa-solid fa-square-phone"></i>+32484/ 03 06 68</p>
+                
             </div>
 
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
-            </div>
+            <div class="social-icons">
+                    <a href="https://github.com/Estime10">GITHUB <i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/estime-vangu-a9a08823a/">LINKEDIN <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://discord.com/channels/@Estime#4008">DISCORD<i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div> 
         </div>
     </div>
 </div>
-<script>
-    var sidemeu = document.getElementById("sidemenu")
-
-    function openmenu(){
-        sidemeu.style.left = "0"
-    }
-    function closenmenu(){
-        sidemeu.style.left = "-200px"
-    }
-</script>
+<script src="/src/javascript/index.js"></script>
 </body>
 </html>
