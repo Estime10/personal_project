@@ -535,4 +535,4 @@ function hmrAcceptRun(bundle, id) {
 
 },{}]},["64YH8","7eMLo"], "7eMLo", "parcelRequire56a1")
 
-//# sourceMappingURL=about.0dc55f35.js.map
+//# sourceMappingURL=index.0dc55f35.js.map

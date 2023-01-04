@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx parcel src/index.html",
-    "about": "npx parcel src/about.html",
-    "tips": "npx parcel src/tips.html",
-    "contact": "npx parcel src/contact.html",
+    "dev": "npx parcel index.html",
+    "about": "npx parcel about.html",
+    "tips": "npx parcel tips.html",
+    "contact": "npx parcel contact.html",
     "build": "npx tsc",
     "prestart": "npx run build",
     "start": "node dist/index.js"
